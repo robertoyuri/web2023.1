@@ -1,0 +1,49 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
+<body>
+<h1>Funciona!</h1>
+<h2>Funciona!</h2>
+<h3>Funciona!</h3>
+<h4>Funciona!</h4>
+<h5>Funciona!</h5>
+<h6>Funciona!</h6>
+<p>texto <b>texto</b> <u>texto</u> texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto</p>
+<br>
+<a href="http://www.google.com">Clique Aqui|!</a>
+<br><br>
+<img src="{% static 'images/animal.png' %}" height="150px"/>
+<div style="background-color: yellow">
+    <br><br><br>
+    <div style="background-color: red">
+        <br><br><br>
+    </div>
+    <br><br><br>
+</div>
+<form>
+    <div>
+        <label>E-mail:</label>
+        <input type="text" name="mail" id="mail">
+    </div>
+    <div>
+        <label>Senha:</label>
+        <input type="password" name="pass" id="pass">
+    </div>
+    <div>
+        <input type="button" value="Login">
+    </div>
+</form>
+<ul>
+    <li>Frango</li>
+    <li>Pão</li>
+</ul>
+<ol>
+    <li>Perdeu</li>
+    <li>Ganhou</li>
+</ol>
+</body>
+</html>

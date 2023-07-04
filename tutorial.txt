@@ -1,5 +1,8 @@
+Entrar na venv
 source /venv/bin/activate  (iniciar venv unix)
 /venv/Scripts/activate.bat (iniciar venv windows)
+
+Configurar django
 pip install django (instalar django)
 cd web2023.1 (nome_da_raiz_de_vcs)(mudar pasta)
 django-admin startproject nome_projeto_de_vcs (criar projeto)
@@ -9,3 +12,13 @@ python manage.py runserver (iniciar servidor)
 control + c (parar servidor)
 python manage.py startapp nome_app_de_vcs (criar app)
 git add nome_app_de_vcs (adcionar git)
+
+Configurar arquivos statics
+pip install dj_static
+colocar cling e midiacling no wsgi e asgi
+python manage.py collectstatic
+
+Configuração Django Admin
+python manage.py makemigrations (prepara as migrações do banco)
+python manage.py migrate (aplica as migrações no banco)
+python manage.py createsuperuser (cria super usuario)
