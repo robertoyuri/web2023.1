@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title%}Login{% endblock %}
+{% block body%}
+<br>
+<div class="container bg-dark text-light rounded-5" style="width: 400px">
+    <br>
+    <form>
+        <legend class="text-center">Login</legend>
+        <div class="mb-3">
+            <label for="disabledTextInput" class="form-label">Usuario</label>
+            <input type="text" id="disabledTextInput" class="form-control">
+        </div>
+        <div class="mb-3">
+            <label for="disabledSelect" class="form-label">Senha</label>
+            <input type="password" id="disabledSelect" class="form-control"/>
+        </div>
+        <button type="submit" class="btn btn-success">Login</button>
+    </form>
+    <br>
+</div>
+{% endblock %}
