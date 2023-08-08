@@ -13,3 +13,6 @@ def create_doctor(request):
 
 def login(request):
     return render(request, 'login.html')
+
+def testjs(request):
+    return render(request, 'testjs.html')

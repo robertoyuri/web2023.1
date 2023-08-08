@@ -1,0 +1,45 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://d3js.org/d3.v4.min.js" type="application/javascript"></script>
+</head>
+<body>
+<form>
+    <input type="text" id="n1">
+    <input type="text" id="op">
+    <input type="text" id="n2">
+    <h1 onclick="soma();">Calcular</h1>
+    <h1 id="result"></h1>
+    <h5>Operadores: Soma, Sub, Multi, Div ou Resto</h5>
+</form>
+<div id="container"></div>
+<script>
+    function soma(){
+        let n1 = parseFloat(document.getElementById('n1').value);
+        let op = (document.getElementById('op').value);
+        let n2 = parseFloat(document.getElementById('n2').value);
+        console.log(n1);
+        console.log(op);
+        console.log(n2);
+        let res = 0;
+        let opp = 0;
+        opp = op == "Soma" ? res = n1 + n2 : 0;
+        opp = op == "Sub" ? res = n1 - n2 : 0;
+        opp = op == "Multi" ? res = n1 * n2 : 0;
+        opp = op == "Div" ? res = n1 / n2 : 0;
+        opp = op == "Resto" ? res = n1 % n2 : 0;
+        let soma = n1+n2;
+        document.getElementById('result').innerText="O Resultado é: " + res;
+        if(res >= 0){
+            document.body.style.backgroundColor = 'Blue';
+        }else {
+            document.body.style.backgroundColor = 'Red';
+        }
+    }
+
+</script>
+</body>
+</html>
