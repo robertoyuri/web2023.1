@@ -1,0 +1,10 @@
+{% extends 'menu.html' %}
+{% load static %}
+{% block title%}Cadastrar Cliente{% endblock %}
+{% block body%}
+<form id="form" method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ cliente_form }}
+    <button type="submit">Salvar</button>
+</form>
+{% endblock %}
