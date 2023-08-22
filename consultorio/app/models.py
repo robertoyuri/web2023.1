@@ -6,6 +6,10 @@ class Cliente(models.Model):
     cpf = models.CharField(max_length=11)
     idade = models.IntegerField()
     endereco = models.CharField(max_length=50)
+    bairro = models.CharField(max_length=50)
+    cep = models.IntegerField()
+    cidade = models.CharField(max_length=50)
+    uf = models.CharField(max_length=2)
     genero = models.CharField(max_length=1)
     def __str__(self):
-        return self.cpf
+        return self.cpf + ' - ' + self.nome

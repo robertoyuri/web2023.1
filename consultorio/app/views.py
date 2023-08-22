@@ -45,3 +45,6 @@ def login(request):
 
 def testjs(request):
     return render(request, 'testjs.html')
+
+def cep(request):
+    return render(request, 'cep.html')
